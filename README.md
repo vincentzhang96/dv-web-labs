@@ -1,7 +1,6 @@
 # dv-web-labs
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Divinitor Labs landing page
 
 ## Prerequisites
 
@@ -23,7 +22,7 @@ You will need the following things properly installed on your computer.
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit app at [http://localhost:4200](http://localhost:4200).
 
 ### Code Generators
 
