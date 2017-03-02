@@ -1,3 +1,7 @@
 <div class="tool-list-entry">
+    {{#if tool.active}}
     <a href="/tool/{{tool.id}}">{{tool.name}}</a>
+    {{else}}
+    <span class="unavailable">{{tool.name}}</span>
+    {{/if}}
 </div>

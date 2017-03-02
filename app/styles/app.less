@@ -21,6 +21,8 @@ body {
     font-family: @dv-f-lato;
     font-size: 14px;
     color: @dv-c-body;
+    width: 100%;
+    height: 100%;
     .no-pad;
     .no-margin;
 }
@@ -31,6 +33,11 @@ p {
 
 a {
     text-decoration: none;
+    color: @dv-c-accent-1;
+    font-weight: bold;
+    &:hover {
+        color: @dv-c-accent-2;
+    }
 }
 
 h1 {
@@ -149,3 +156,4 @@ h4 {
     padding: 0 20px 10px 0;
 }
 
+@import "left-panel.less";

@@ -1,10 +1,35 @@
 <!-- Left panel -->
+<div class="left-panel">
+    <div class="masthead">
+        <div class="vahrhedral">Vahrhedral</div>
+        <span class="divinitor">Divinitor</span><i class="slash"></i><span class="inline subtitle">Labs</span>
+    </div>
+    <div class="info">
+        <h4>Welcome</h4>
+        <p>
+            <strong>Divinitor Labs</strong> is where in-development tools are available for public testing. 
+            These tools are in development and are subject to constant changes or removal. New tools are added periodically. 
+            Tools that have exited Labs will become available at <a href="https://divinitor.com">Divinitor</a> and the Labs 
+            version will redirect to the Divinitor version for a grace period. 
+        </p>
+        <p>
+            <strong>Utilize these resources at your own risk. Data may be lost or incorrect.</strong>
+        </p>
+        <p>
+            Please provide bug reports and feedback to Vahr.
+        </p>
+    </div>
 
-{{#each model as |toolEntry|}}
-    {{tool-list-entry tool=toolEntry}}
-{{/each}}
+    <div class="tool-list">
+        <h2 class="section-header">Tools</h2>
+        {{#each model as |toolEntry|}}
+            {{tool-list-entry tool=toolEntry}}
+        {{else}}
+            <div class="none">No tools are available for testing right now</div>
+        {{/each}}
+    </div>
 
-
+</div>
 
 <!-- Info panel -->
 
