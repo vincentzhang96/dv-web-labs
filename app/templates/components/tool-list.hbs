@@ -1,0 +1,8 @@
+<div class="tool-list">
+    <h2 class="section-header">Tools</h2>
+    {{#each tools as |toolEntry|}}
+        {{tool-list-entry tool=toolEntry}}
+    {{else}}
+        <div class="none">No tools are available for testing right now</div>
+    {{/each}}
+</div>

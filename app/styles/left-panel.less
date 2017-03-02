@@ -4,7 +4,7 @@
     width: 35em;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    @border-thickness: 0.1em;
+    @border-thickness: 0.2em;
     border-width: 0 @border-thickness 0 0;
     border-style: solid;
     -webkit-border-image: -webkit-linear-gradient(#6F7784, #B8E2FF, #6F7784) 1 100%;
@@ -38,6 +38,11 @@
         .inline.subtitle {
             color: @dv-c-foreground;
             font-size: 2.4em;
+            letter-spacing: 0.3em;
+        }
+        .tagline {
+            color: @dv-c-accent-2;
+            font-size: 1.2em;
             letter-spacing: 0.3em;
         }
     }
@@ -79,9 +84,10 @@
             .unavailable {
                 color: @dv-c-disabled;
                 &::after {
-                    content: " [CLOSED]";
+                    content: " [UNAVAILABLE]";
                     font-size: 0.6em;
                     letter-spacing: 0.1em;
+                    color: #CD2020;
                 }
             }
         }
