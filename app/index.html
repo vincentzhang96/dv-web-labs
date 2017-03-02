@@ -13,6 +13,9 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#131315">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700"> 
+
     {{content-for "head"}}
 
     <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
@@ -21,7 +24,24 @@
     {{content-for "head-footer"}}
   </head>
   <body>
+    <!-- page background (always on) -->
+    <div class="bg-img"></div>
+    <div class="vignette"></div>
+    <div class="bg-video">
+        <video autoplay loop>
+            <source src="https://static.divinitor.com/site/common/video/dv-masthead-bg-video.mp4" type="video/mp4">
+            <source src="https://static.divinitor.com/site/common/video/dv-masthead-bg-video.mkv" type="video/webm">
+        </video>
+    </div>
+    <div class="bg-fadeout"></div>
+
+
     {{content-for "body"}}
+
+    <div class="copyright">
+        Divinitor &copy; 2017 Vincent Zhang<br/>
+        Dragon Nest &copy; 2017 Eyedentity Games, Inc
+    </div>
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/dv-web-labs.js"></script>
