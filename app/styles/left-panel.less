@@ -30,7 +30,7 @@
             letter-spacing: 0.3em;
         }
         .slash::before {
-            content: " / ";
+            content: "/ ";
             color: @dv-c-body;
             font-size: 2.4em;
             letter-spacing: 0.3em;
@@ -84,11 +84,16 @@
             .unavailable {
                 color: @dv-c-disabled;
                 &::after {
-                    content: " [UNAVAILABLE]";
+                    content: " [CLOSED]";
                     font-size: 0.6em;
                     letter-spacing: 0.1em;
                     color: #CD2020;
                 }
+            }
+            .subdata {
+                color: @dv-c-idle;
+                font-size: 0.6em;
+                letter-spacing: 0.05em;
             }
         }
         .none {

@@ -1,7 +1,18 @@
 <div class="tool-list-entry">
     {{#if tool.active}}
-    <a href="/tool/{{tool.id}}">{{tool.name}}</a>
+    <a href="/tool/{{tool.id}}/{{tool.version}}">
+        {{tool.name}}
+        {{#if tool.restricted}}
+        <i class="fa fa-lock"></i>
+        {{/if}}
+    </a>
     {{else}}
-    <span class="unavailable">{{tool.name}}</span>
+    <span class="unavailable">
+        {{tool.name}}
+        {{#if tool.restricted}}
+        <i class="fa fa-lock"></i>
+        {{/if}}
+    </span>
     {{/if}}
+    <div class="subdata">{{tool.version}} updated {{tool.updated}}</div>
 </div>
