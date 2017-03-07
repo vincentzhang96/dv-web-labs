@@ -72,10 +72,12 @@
             font-size: 1.8em;
             padding-bottom: 10px;
             letter-spacing: 0.3em;
+            cursor: default;
             a {
                 color: @dv-c-accent-1;
                 transition: color 0.25s ease;
                 font-weight: normal;
+                cursor: pointer;
                 &:hover {
                     color: @dv-c-foreground;
                 }
@@ -83,6 +85,7 @@
 
             .unavailable {
                 color: @dv-c-disabled;
+                cursor: not-allowed;
                 &::after {
                     content: " [CLOSED]";
                     font-size: 0.6em;
