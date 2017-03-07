@@ -179,3 +179,30 @@ h4 {
     padding: 0 20px 10px 0;
 }
 
+.dv-web-ui-spinner {
+    width: 384px;
+    height: 384px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .fade-in(2s);
+}
+
+.dv-web-ui-spinner .spinner {
+    -webkit-animation: spin 6s infinite;
+    animation: spin 6s infinite;
+    @-webkit-keyframes spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    @keyframes spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+}
